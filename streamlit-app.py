@@ -16,7 +16,7 @@ FRAME_WINDOW = st.image([])
 # Load face detection model.
 face_detection = mp_face_detection.FaceDetection(model_selection=1, min_detection_confidence=0.5)
 
-cap = cv2.VideoCapture(2)  # Use 0 for webcam
+cap = cv2.VideoCapture(-1)  # Use 0 for webcam
 
 while run:
     ret, frame = cap.read()
