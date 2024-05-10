@@ -29,7 +29,7 @@ st.title("Real-Time Face Detection App with FPS")
 model_type = st.sidebar.selectbox("Select the Face Detection Model", ("Short-Range", "Standard"))
 
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 if not cap.isOpened():
     print("Cannot open camera")
